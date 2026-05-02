@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A fictional interactive homepage template for Siqi Xie, product manager."
+    />
+    <title>Siqi Xie | Product Portfolio</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="progress" aria-hidden="true"></div>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Siqi Xie home">
+        <span class="brand-mark">SX</span>
+        <span>Siqi Xie</span>
+      </a>
+
+      <button class="icon-button nav-toggle" type="button" aria-label="Open navigation" data-nav-toggle>
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="cv.html">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="icon-button theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme" data-theme-toggle>
+        <i data-lucide="moon"></i>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-inner reveal">
+          <p class="eyebrow">Fictional product leader template</p>
+          <h1 id="hero-title">Siqi Xie</h1>
+          <p class="hero-subtitle">
+            Principal Product Manager shaping AI-native workflow products from first customer signal to global launch.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">
+              <span>Explore work</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a class="button button-secondary" href="assets/siqi-xie-cv.pdf">
+              <span>Download fake CV</span>
+              <i data-lucide="download"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section page-preview-section" aria-labelledby="pages-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Multi-page kit</p>
+          <h2 id="pages-title">Portfolio depth and a downloadable CV, ready to replace later.</h2>
+          <p>
+            The site now splits the personal homepage, fictional project portfolio, and CV into separate pages with shared navigation.
+          </p>
+        </div>
+
+        <div class="preview-grid">
+          <a class="preview-card reveal" href="portfolio.html">
+            <img
+              src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80"
+              alt="Fictional product workshop photo"
+            />
+            <span class="tag">Portfolio</span>
+            <h3>Project portfolio</h3>
+            <p>Deep case studies, external video links, fake launch artifacts, and photo-led work experience.</p>
+          </a>
+          <a class="preview-card reveal" href="cv.html">
+            <img
+              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80"
+              alt="Fictional meeting photo for CV page"
+            />
+            <span class="tag tag-coral">CV</span>
+            <h3>Informative CV</h3>
+            <p>A structured web CV with downloadable PDF, fictional roles, skills, education, and awards.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Career highlights">
+        <div class="signal" data-count="42">
+          <span class="metric">0</span>
+          <span>enterprise launches</span>
+        </div>
+        <div class="signal" data-count="18">
+          <span class="metric">0</span>
+          <span>markets entered</span>
+        </div>
+        <div class="signal" data-count="9">
+          <span class="metric">0</span>
+          <span>product teams coached</span>
+        </div>
+        <div class="signal" data-count="4">
+          <span class="metric">0</span>
+          <span>zero-to-one bets scaled</span>
+        </div>
+      </section>
+
+      <section class="section section-light" id="work" aria-labelledby="work-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Fictional case studies with real portfolio rhythm.</h2>
+          <p>
+            A template set for growth, AI workflow, and operational product stories. Swap the copy later with your real projects.
+          </p>
+        </div>
+
+        <div class="segmented-control reveal" role="tablist" aria-label="Filter case studies">
+          <button class="segment active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="segment" type="button" data-filter="growth" aria-pressed="false">Growth</button>
+          <button class="segment" type="button" data-filter="ai" aria-pressed="false">AI</button>
+          <button class="segment" type="button" data-filter="ops" aria-pressed="false">Ops</button>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-card reveal" data-category="ai">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+              alt="Analytics dashboard on a desktop display"
+            />
+            <div class="case-content">
+              <span class="tag">AI workflow</span>
+              <h3>Copilot Launch Studio</h3>
+              <p>
+                Led discovery, pricing, and alpha design for an internal AI launch platform used by fictional global product teams.
+              </p>
+              <dl>
+                <div><dt>Activation</dt><dd>+31%</dd></div>
+                <div><dt>Cycle time</dt><dd>-22%</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="case-card reveal" data-category="growth">
+            <img
+              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80"
+              alt="Product team reviewing a roadmap in a bright office"
+            />
+            <div class="case-content">
+              <span class="tag tag-coral">Growth</span>
+              <h3>Northstar Retention System</h3>
+              <p>
+                Reframed onboarding around behavioral moments, partner education, and senior stakeholder reporting.
+              </p>
+              <dl>
+                <div><dt>Retention</dt><dd>+14 pts</dd></div>
+                <div><dt>Revenue</dt><dd>$8.6M</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="case-card reveal" data-category="ops">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+              alt="Workshop table with sticky notes and product planning artifacts"
+            />
+            <div class="case-content">
+              <span class="tag tag-lime">Ops</span>
+              <h3>Field Feedback Mesh</h3>
+              <p>
+                Designed a routing model that turned fragmented sales notes into prioritized roadmap evidence.
+              </p>
+              <dl>
+                <div><dt>Signals tagged</dt><dd>64K</dd></div>
+                <div><dt>Teams served</dt><dd>17</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="approach" aria-labelledby="approach-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Operating style</p>
+          <h2 id="approach-title">Clear decisions, useful ambiguity, fast learning loops.</h2>
+        </div>
+
+        <div class="approach-grid">
+          <article class="approach-card reveal">
+            <i data-lucide="radar"></i>
+            <h3>Signal before ceremony</h3>
+            <p>Customer evidence, usage data, and sharp problem framing come before roadmapping theater.</p>
+          </article>
+          <article class="approach-card reveal">
+            <i data-lucide="split"></i>
+            <h3>Tradeoffs in public</h3>
+            <p>Assumptions, opportunity cost, and decision rights are written down early enough to be useful.</p>
+          </article>
+          <article class="approach-card reveal">
+            <i data-lucide="sparkles"></i>
+            <h3>Make AI feel inevitable</h3>
+            <p>Automation lands when it honors user judgment, preserves trust, and fades into the job to be done.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="story" aria-labelledby="story-title">
+        <div class="portrait-wrap reveal">
+          <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80"
+            alt="Fictional portrait placeholder for Siqi Xie"
+          />
+        </div>
+        <div class="story-copy reveal">
+          <p class="eyebrow">Fictional background</p>
+          <h2 id="story-title">Built across consumer scale, B2B depth, and executive-level ambiguity.</h2>
+          <p>
+            Siqi is imagined here as a product manager who has worked at Meridian Labs, Atlas Commerce, and NovaWorks. Her fictional portfolio spans AI knowledge systems, marketplace trust, and enterprise workflow products.
+          </p>
+          <div class="timeline" aria-label="Fictional experience timeline">
+            <div class="timeline-item">
+              <span>2024 - Now</span>
+              <strong>Principal PM, Meridian Labs</strong>
+              <p>AI decision tooling for product, sales, and support organizations.</p>
+            </div>
+            <div class="timeline-item">
+              <span>2020 - 2024</span>
+              <strong>Group PM, Atlas Commerce</strong>
+              <p>Growth systems, trust signals, and merchant-facing analytics.</p>
+            </div>
+            <div class="timeline-item">
+              <span>2017 - 2020</span>
+              <strong>Senior PM, NovaWorks</strong>
+              <p>Collaboration products for distributed product and design teams.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-panel reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Open to thoughtful product conversations.</h2>
+          <p>
+            Advisory work, product leadership roles, AI workflow experiments, and high-context founder conversations.
+          </p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:hello@siqixie.example">
+              <span>hello@siqixie.example</span>
+              <i data-lucide="mail"></i>
+            </a>
+            <button class="button button-ghost" type="button" data-copy-email>
+              <span>Copy email</span>
+              <i data-lucide="copy"></i>
+            </button>
+          </div>
+          <p class="copy-status" role="status" aria-live="polite" data-copy-status></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Template content, organizations, numbers, and photos are fictional placeholders.</p>
+      <a href="#top" aria-label="Back to top">Back to top</a>
+    </footer>
+  </body>
+</html>

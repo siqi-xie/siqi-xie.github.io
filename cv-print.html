@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Siqi Xie | Fictional CV PDF</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 14mm;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: #15202b;
+        background: #ffffff;
+        font-family: Inter, Arial, sans-serif;
+        font-size: 10.5pt;
+        line-height: 1.42;
+      }
+
+      a {
+        color: #007474;
+        text-decoration: none;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 30pt;
+        line-height: 1;
+      }
+
+      h2 {
+        margin-bottom: 7pt;
+        color: #007474;
+        font-size: 11pt;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        font-size: 12pt;
+      }
+
+      ul {
+        margin: 6pt 0 0;
+        padding-left: 14pt;
+      }
+
+      li + li {
+        margin-top: 3pt;
+      }
+
+      .notice {
+        margin-bottom: 8pt;
+        padding: 6pt 8pt;
+        border: 1px solid #d5dde8;
+        border-radius: 6pt;
+        color: #5d6878;
+        font-size: 8.5pt;
+      }
+
+      .header {
+        display: grid;
+        grid-template-columns: 1fr 92pt;
+        gap: 20pt;
+        align-items: center;
+        margin-bottom: 18pt;
+        padding-bottom: 14pt;
+        border-bottom: 2pt solid #00a6a6;
+      }
+
+      .header p {
+        margin-top: 8pt;
+        color: #4e5b6a;
+        font-size: 11.5pt;
+      }
+
+      .header img {
+        width: 92pt;
+        height: 92pt;
+        border-radius: 8pt;
+        object-fit: cover;
+      }
+
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8pt 14pt;
+        margin-top: 10pt;
+        color: #4e5b6a;
+        font-size: 9.2pt;
+      }
+
+      .layout {
+        display: grid;
+        grid-template-columns: 0.34fr 0.66fr;
+        gap: 18pt;
+      }
+
+      section {
+        break-inside: avoid;
+        margin-bottom: 14pt;
+      }
+
+      .sidebar section {
+        padding: 10pt;
+        border: 1px solid #d9e1ea;
+        border-radius: 8pt;
+        background: #f7f9fc;
+      }
+
+      .sidebar p + p {
+        margin-top: 8pt;
+      }
+
+      .pill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5pt;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .pill-list li {
+        margin: 0;
+        padding: 3pt 6pt;
+        border-radius: 999pt;
+        background: #e7f7f5;
+        color: #006d6d;
+        font-weight: 700;
+      }
+
+      .item {
+        padding-bottom: 11pt;
+        border-bottom: 1px solid #d9e1ea;
+      }
+
+      .item + .item {
+        margin-top: 11pt;
+      }
+
+      .item span {
+        display: block;
+        margin-bottom: 2pt;
+        color: #ff6b57;
+        font-size: 8.8pt;
+        font-weight: 800;
+      }
+
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 7pt;
+        margin: 10pt 0 14pt;
+      }
+
+      .metric {
+        padding: 8pt;
+        border-radius: 8pt;
+        background: #eef6f7;
+      }
+
+      .metric strong {
+        display: block;
+        font-size: 14pt;
+      }
+
+      .metric span {
+        color: #5d6878;
+        font-size: 8.5pt;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8pt;
+      }
+
+      .project {
+        padding: 9pt;
+        border: 1px solid #d9e1ea;
+        border-radius: 8pt;
+      }
+
+      .project p {
+        margin-top: 4pt;
+        color: #4e5b6a;
+      }
+
+      .page-break {
+        break-before: page;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="notice">Fictional demo CV. All employers, metrics, awards, links, and identity details are invented placeholders for a homepage template.</p>
+
+    <header class="header">
+      <div>
+        <h1>Siqi Xie</h1>
+        <p>Principal Product Manager · AI workflow · Marketplace trust · Enterprise GTM systems</p>
+        <div class="contact">
+          <span>hello@siqixie.example</span>
+          <span>siqixie.example</span>
+          <span>Hong Kong / Singapore / Remote</span>
+          <span>Portfolio: siqixie.example/portfolio</span>
+        </div>
+      </div>
+      <img
+        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=82"
+        alt="Fictional portrait placeholder for Siqi Xie"
+      />
+    </header>
+
+    <div class="metrics">
+      <div class="metric"><strong>42</strong><span>fictional launches</span></div>
+      <div class="metric"><strong>18</strong><span>markets entered</span></div>
+      <div class="metric"><strong>9</strong><span>product teams coached</span></div>
+      <div class="metric"><strong>$8.6M</strong><span>invented retained revenue</span></div>
+    </div>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <section>
+          <h2>Profile</h2>
+          <p>Fictional senior PM with 9+ years across AI workflow, marketplace trust, growth systems, and product operations.</p>
+        </section>
+        <section>
+          <h2>Core Skills</h2>
+          <ul class="pill-list">
+            <li>Product strategy</li>
+            <li>AI UX</li>
+            <li>Trust systems</li>
+            <li>Growth modeling</li>
+            <li>Experiment design</li>
+            <li>Executive storytelling</li>
+            <li>GTM design</li>
+            <li>Research ops</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Education</h2>
+          <p><strong>M.S. Management Science</strong><br />Pacific School of Business, 2017</p>
+          <p><strong>B.S. Human-Computer Systems</strong><br />Westbridge University, 2015</p>
+        </section>
+        <section>
+          <h2>Tools</h2>
+          <p>Amplitude, Looker, Figma, Linear, SQL, Airtable, Mixpanel, Notion, internal LLM evaluation tooling.</p>
+        </section>
+      </aside>
+
+      <main>
+        <section>
+          <h2>Experience</h2>
+          <article class="item">
+            <span>2024 - Present</span>
+            <h3>Principal Product Manager, Meridian Labs</h3>
+            <ul>
+              <li>Created fictional launch-readiness copilot for enterprise product teams, reducing GTM handoff time by 32%.</li>
+              <li>Defined AI review workflows, evaluation dashboards, and escalation protocols for five product groups.</li>
+              <li>Partnered with design, legal, sales, and applied research to package internal AI capabilities into customer-facing workflows.</li>
+            </ul>
+          </article>
+          <article class="item">
+            <span>2020 - 2024</span>
+            <h3>Group Product Manager, Atlas Commerce</h3>
+            <ul>
+              <li>Led fictional merchant retention portfolio across onboarding, lifecycle messaging, and marketplace trust tooling.</li>
+              <li>Grew retained merchant revenue by a fictional $8.6M through activation redesign and risk-prioritized success playbooks.</li>
+              <li>Managed four PMs and established operating reviews used by product, sales, operations, and finance.</li>
+            </ul>
+          </article>
+          <article class="item">
+            <span>2017 - 2020</span>
+            <h3>Senior Product Manager, NovaWorks</h3>
+            <ul>
+              <li>Built fictional collaboration analytics for distributed teams, including signal routing, research repositories, and decision logs.</li>
+              <li>Launched insight-router workflow that normalized 64K fake customer signals into roadmap evidence.</li>
+              <li>Ran field research across 18 fictional markets and transformed findings into quarterly portfolio bets.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section>
+          <h2>Selected Projects</h2>
+          <div class="projects">
+            <article class="project">
+              <h3>LaunchCommand AI</h3>
+              <p>AI workflow for launch operations; fictional external video: MDN sample MP4 placeholder.</p>
+            </article>
+            <article class="project">
+              <h3>Atlas Retention Map</h3>
+              <p>Merchant growth system and executive dashboard; fictional external video: W3Schools sample MP4 placeholder.</p>
+            </article>
+            <article class="project">
+              <h3>Merchant Trust Console</h3>
+              <p>Trust operations surface with explainable recommendations and escalation reduction.</p>
+            </article>
+            <article class="project">
+              <h3>Field Insight Router</h3>
+              <p>Research operations engine for customer signals, support logs, and roadmap evidence.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="page-break">
+          <h2>Leadership, Awards & Speaking</h2>
+          <article class="item">
+            <span>2025</span>
+            <h3>Fictional Product Strategy Fellow, Meridian Leadership Forum</h3>
+            <ul>
+              <li>Designed internal curriculum for AI product judgment, launch accountability, and evidence-backed prioritization.</li>
+              <li>Coached nine fictional product teams on writing strategy narratives and defining decision thresholds.</li>
+            </ul>
+          </article>
+          <article class="item">
+            <span>2024</span>
+            <h3>Invented keynote: “Making AI Workflow Trustworthy Enough to Use”</h3>
+            <ul>
+              <li>Presented fake case-study lessons on confidence calibration, handoff design, and audit trails for AI workflow tools.</li>
+              <li>External video link is represented on the portfolio page as a replaceable placeholder.</li>
+            </ul>
+          </article>
+          <article class="item">
+            <span>2022</span>
+            <h3>Internal Launch Quality Award, Atlas Commerce</h3>
+            <ul>
+              <li>Recognized fictional cross-functional operating model connecting product, legal, sales, success, and finance.</li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
